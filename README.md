@@ -4,6 +4,11 @@ Uses esp32 S2 or S3 for the USB interface and receives stick position info over 
 
 Tested with S2 USB dongle, Lolin ESP32 S2 Mini and ESP32-S3-DevKitC-1. There aren't a lot of requirements for the hardware other than needing to be an S2 or S3 processor with the usb directly connected to the chip, not via a usb-serial adapter, and having an antenna for wifi.
 
+Code based on platform-espressif32/examples/espidf-peripherals-usb and then extended to add esp-now receiver code, add a custom
+Joystick descriptor with higher resolution and a composite descriptor for S2 to allow both usb hid and cdc serial output.
+
+Much cleanup work still to do.
+
 ## Example links from AliExpress:
 
 https://www.aliexpress.com/item/1005006206868342.html
